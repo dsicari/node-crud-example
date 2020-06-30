@@ -1,0 +1,18 @@
+# Criar package.json
+{
+  "name": "modulo01", // nome do package, interessante se exportarmos este package
+  "version": "1.0.0", // versao do projeto
+  "main": "index.js", // ponto de entrada da aplicacao
+  "license": "MIT",
+}
+
+# Adicionar express ao projeto
+yarn add express
+
+# Adicionar nodemon para refletir mudancas no codigo em tempo real, somente em DEV
+yarn add nodemon -D
+
+# Adcicionar script para executar nodemon
+"scripts": {
+  "dev": "nodemon index.js"
+},
