@@ -1,0 +1,42 @@
+@url = http://localhost:3000
+
+GET {{url}}/users HTTP/1.1
+
+###
+
+GET {{url}}/users/1 HTTP/1.1
+
+###
+
+GET {{url}}/users/21 HTTP/1.1
+
+###
+
+POST {{url}}/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Onório"
+}
+
+###
+
+POST {{url}}/users HTTP/1.1
+content-type: application/json
+
+{
+    "name2": "Onório"
+}
+
+###
+
+PUT {{url}}/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name2": "Joseph"
+}
+
+###
+
+DELETE {{url}}/users/0 HTTP/1.1

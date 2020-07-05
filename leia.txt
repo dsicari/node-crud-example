@@ -16,3 +16,9 @@ yarn add nodemon -D
 "scripts": {
   "dev": "nodemon index.js"
 },
+
+# Rodar programa
+yarn dev
+
+# Para iniciar debug no vscode
+Debug > Add launch.json > Play
